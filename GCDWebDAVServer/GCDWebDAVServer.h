@@ -78,6 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  See the README.md file for more information about the features of GCDWebDAVServer.
  */
+NS_EXTENSION_UNAVAILABLE("CGDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 @interface GCDWebDAVServer : GCDWebServer
 
 /**

@@ -31,6 +31,7 @@
 
 #import "GCDWebServerPrivate.h"
 
+NS_EXTENSION_UNAVAILABLE("CGDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 @implementation GCDWebServerURLEncodedFormRequest
 
 + (NSString*)mimeType {

@@ -45,6 +45,7 @@ typedef void (^GCDWebServerBodyReaderCompletionBlock)(NSData* _Nullable data, NS
  *
  *  @warning These methods can be called on any GCD thread.
  */
+NS_EXTENSION_UNAVAILABLE("CGDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 @protocol GCDWebServerBodyReader <NSObject>
 
 @required
@@ -95,6 +96,7 @@ typedef void (^GCDWebServerBodyReaderCompletionBlock)(NSData* _Nullable data, NS
  *
  *  @warning GCDWebServerResponse instances can be created and used on any GCD thread.
  */
+NS_EXTENSION_UNAVAILABLE("CGDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 @interface GCDWebServerResponse : NSObject <GCDWebServerBodyReader>
 
 /**

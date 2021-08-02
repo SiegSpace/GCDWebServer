@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @warning The GCDWebServerConnection retains the GCDWebServer until the
  *  connection is closed.
  */
+NS_EXTENSION_UNAVAILABLE("CGDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 @interface GCDWebServerConnection : NSObject
 
 /**

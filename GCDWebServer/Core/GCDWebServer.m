@@ -347,6 +347,7 @@ static void _ExecuteMainThreadRunLoopSources() {
   [_handlers removeAllObjects];
 }
 
+NS_EXTENSION_UNAVAILABLE("GCDWebServer not supported in extensions (deprecated use of UIApplication shared)")
 static void _NetServiceRegisterCallBack(CFNetServiceRef service, CFStreamError* error, void* info) {
   GWS_DCHECK([NSThread isMainThread]);
   @autoreleasepool {
@@ -363,6 +364,7 @@ static void _NetServiceRegisterCallBack(CFNetServiceRef service, CFStreamError* 
   }
 }
 
+NS_EXTENSION_UNAVAILABLE("xxxx not supported in extensions (deprecated use of UIApplication shared)")
 static void _NetServiceResolveCallBack(CFNetServiceRef service, CFStreamError* error, void* info) {
   GWS_DCHECK([NSThread isMainThread]);
   @autoreleasepool {
@@ -380,6 +382,7 @@ static void _NetServiceResolveCallBack(CFNetServiceRef service, CFStreamError* e
   }
 }
 
+NS_EXTENSION_UNAVAILABLE("xxxx not supported in extensions (deprecated use of UIApplication shared)")
 static void _DNSServiceCallBack(DNSServiceRef sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceErrorType errorCode, uint32_t externalAddress, DNSServiceProtocol protocol, uint16_t internalPort, uint16_t externalPort, uint32_t ttl, void* context) {
   GWS_DCHECK([NSThread isMainThread]);
   @autoreleasepool {
@@ -404,6 +407,7 @@ static void _DNSServiceCallBack(DNSServiceRef sdRef, DNSServiceFlags flags, uint
   }
 }
 
+NS_EXTENSION_UNAVAILABLE("xxxx not supported in extensions (deprecated use of UIApplication shared)")
 static void _SocketCallBack(CFSocketRef s, CFSocketCallBackType type, CFDataRef address, const void* data, void* info) {
   GWS_DCHECK([NSThread isMainThread]);
   @autoreleasepool {
